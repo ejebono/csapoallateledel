@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="hu" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Termékek - Csapó Állateledel Webáruház</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+</head>
+<body>
+
+<div class="container">
+    <!-- FEJLÉC -->
+    <header class="navbar">
+        <div class="logo">
+            <img th:src="@{/images/logo.jpg}" alt="Csapó Állateledel Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a th:href="@{/}">Kezdőlap</a></li>
+                <li><a th:href="@{/termekek}" class="active">Termékek</a></li>
+                <li><a th:href="@{/kapcsolat}">Elérhetőség</a></li>
+                <li><a th:href="@{/fiok}">Fiók</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- TERMÉKEK KATALÓGUS -->
+    <section class="products-section">
+        <h1 class="page-title">Összes Termékünk</h1>
+
+        <div class="product-list">
+            <div class="product-card">
+                <img th:src="@{/images/logo.jpg}" alt="Kutyatáp">
+                <h3>Prémium Kutyatáp 10kg</h3>
+                <p class="price">8 990 Ft</p>
+                <button class="cart-btn">Kosárba</button>
+            </div>
+
+            <div class="product-card">
+                <img th:src="@{/images/logo.jpg}" alt="Macska eledel">
+                <h3>Alutasakos Macskaeledel</h3>
+                <p class="price">1 490 Ft</p>
+                <button class="cart-btn">Kosárba</button>
+            </div>
+
+            <div class="product-card">
+                <img th:src="@{/images/logo.jpg}" alt="Kutya játék">
+                <h3>Kutyajáték csont</h3>
+                <p class="price">2 190 Ft</p>
+                <button class="cart-btn">Kosárba</button>
+            </div>
+
+            <div class="product-card">
+                <img th:src="@{/images/logo.jpg}" alt="Kaparófa">
+                <h3>Mászóka és Kaparófa</h3>
+                <p class="price">18 500 Ft</p>
+                <button class="cart-btn">Kosárba</button>
+            </div>
+
+            <div class="product-card">
+                <img th:src="@{/images/logo.jpg}" alt="Hormonmentes táp">
+                <h3>Kisállat Magkeverék 1kg</h3>
+                <p class="price">1 290 Ft</p>
+                <button class="cart-btn">Kosárba</button>
+            </div>
+
+            <div class="product-card">
+                <img th:src="@{/images/logo.jpg}" alt="Macskaalom">
+                <h3>Prémium Macskaalom 5L</h3>
+                <p class="price">3 490 Ft</p>
+                <button class="cart-btn">Kosárba</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- LÁBLÉC -->
+    <footer class="footer">
+        <p>&copy; 2026 Csapó Állateledel. Minden jog fenntartva.</p>
+    </footer>
+</div>
+
+</body>
+</html>

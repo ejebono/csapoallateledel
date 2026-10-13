@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="hu" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Állateledel Webáruház</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+</head>
+<body>
+    <div class="container">
+          <div class="navbar">
+              <div class="logo">
+                  <img th:src="@{/images/logo.jpg}" alt="Csapó Állateledel Logo">
+              </div>
+              <nav>
+                  <ul>
+                      <li><a href="">Kezdőlap</a> </li>
+                      <li><a href="">Termékek</a> </li>
+                      <li><a href="">Elérhetősg</a> </li>
+                      <li><a href="">Fiók</a> </li>
+
+                  </ul>
+              </nav>
+          </div>
+      </div>
+      <section class="hero">
+          <div class="hero-text">
+              <h1>Minden, amire kedvencednek szüksége van!</h1>
+              <p>Prémium minőségű eledel és felszerelés kutyáknak, macskáknak és kisállatoknak.</p>
+              <a>Vásárolj most</a>
+          </div>
+      </section>
+    <section class="categories-section">
+        <h2 class="section-title">Kategóriák</h2>
+        <div class="category-grid">
+            <div class="category-card">
+                <div class="category-icon">🐶</div>
+                <h3>Kutya</h3>
+                <p>Táptól a játékokig</p>
+            </div>
+            <div class="category-card">
+                <div class="category-icon">🐱</div>
+                <h3>Macska</h3>
+                <p>Alom, táp és kaparófa</p>
+            </div>
+            <div class="category-card">
+                <div class="category-icon">🐹</div>
+                <h3>Kisállat</h3>
+                <p>Rágcsálók és madarak</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. KIEMELT TERMÉKEK (Product Grid) -->
+    <section class="products-section" id="products">
+        <h2 class="section-title">Kiemelt Termékeink</h2>
+        <div class="product-list">
+            <div class="product-card">
+                <img th:src="@{/images/logo.jpg}" alt="Kutyatáp">
+                <h3>Prémium Kutyatáp 10kg</h3>
+                <p class="price">8 990 Ft</p>
+                <button class="cart-btn">Kosárba</button>
+            </div>
+
+            <div class="product-card">
+                <img th:src="@{/images/logo.jpg}" alt="Macska eledel">
+                <h3>Alutasakos Macskaeledel</h3>
+                <p class="price">1 490 Ft</p>
+                <button class="cart-btn">Kosárba</button>
+            </div>
+
+            <div class="product-card">
+                <img th:src="@{/images/logo.jpg}" alt="Kutya játék">
+                <h3>Kutyajáték csont</h3>
+                <p class="price">2 190 Ft</p>
+                <button class="cart-btn">Kosárba</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. MIÉRT MINKET VÁLASSZ? (Bizalomépítő sáv) -->
+    <section class="features-section">
+        <div class="feature-box">
+            <div class="feature-icon">🚚</div>
+            <h4>Gyors szállítás</h4>
+            <p>Akár 24-48 órán belül otthonodban</p>
+        </div>
+        <div class="feature-box">
+            <div class="feature-icon">🛡️</div>
+            <h4>Garantált minőség</h4>
+            <p>Kizárólag bevizsgált termékek</p>
+        </div>
+        <div class="feature-box">
+            <div class="feature-icon">💬</div>
+            <h4>Segítőkész tanácsadás</h4>
+            <p>Keress minket bizalommal</p>
+        </div>
+    </section>
+
+    <!-- 6. LÁBLÉC (Footer) -->
+    <footer class="footer" id="contact">
+        <p>&copy; 2026 Csapó Állateledel. Minden jog fenntartva.</p>
+    </footer>
+    </div>
+
+</body>
+</html>
