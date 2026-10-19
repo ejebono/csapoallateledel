@@ -15,4 +15,12 @@ public class WebController {
     public String termek() {
         return "termek";
     }
+
+    @GetMapping("/elerhetoseg")
+    public String elerhetoseg() {return "elerhetoseg";}
+
+    @GetMapping("/fiok")
+    public String fiok() {
+        return "fiok";
+    }
 }

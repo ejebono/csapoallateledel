@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="hu" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiók - Csapó Állateledel Webáruház</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+</head>
+<body>
+
+<div class="container">
+    <!-- FEJLÉC -->
+    <header class="navbar">
+        <div class="logo">
+            <img th:src="@{/images/logo.png}" alt="Csapó Állateledel Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a th:href="@{/}">Kezdőlap</a></li>
+                <li><a th:href="@{/termek}">Termékek</a></li>
+                <li><a th:href="@{/elerhetoseg}">Elérhetőség</a></li>
+                <li><a th:href="@{/fiok}" class="active">Fiók</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- FIÓK / BEJELENTKEZÉS FŐRÉSZ -->
+    <section class="account-section">
+        <div class="account-container">
+            <h1 class="page-title">Bejelentkezés</h1>
+            <p class="account-intro">Lépj be a fiókodba a megrendeléseid nyomon követéséhez!</p>
+
+            <form class="account-form">
+                <div class="form-group">
+                    <label for="email">E-mail cím</label>
+                    <input type="email" id="email" placeholder="janos@example.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Jelszó</label>
+                    <input type="password" id="password" placeholder="••••••••" required>
+                </div>
+
+                <div class="form-options">
+                    <label class="remember-me">
+                        <input type="checkbox"> Emlékezz rám
+                    </label>
+                    <a href="#" class="forgot-password">Elfelejtetted a jelszót?</a>
+                </div>
+
+                <button type="submit" class="submit-btn">Bejelentkezés</button>
+            </form>
+
+            <div class="account-switch">
+                <p>Még nincs fiókod? <a href="#">Regisztrálj itt!</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- LÁBLÉC -->
+    <footer class="footer">
+        <p>&copy; 2026 Csapó Állateledel. Minden jog fenntartva.</p>
+    </footer>
+</div>
+
+</body>
+</html>

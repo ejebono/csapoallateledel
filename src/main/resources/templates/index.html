@@ -9,14 +9,14 @@
     <div class="container">
           <div class="navbar">
               <div class="logo">
-                  <img th:src="@{/images/logo.jpg}" alt="Csapó Állateledel Logo">
+                  <img th:src="@{/images/logo.png}" alt="Csapó Állateledel Logo">
               </div>
               <nav>
                   <ul>
                       <li><a th:href="@{/}">Kezdőlap</a></li>
                       <li><a th:href="@{/termek}">Termékek</a></li>
-                      <li><a href="#contact">Elérhetőség</a></li>
-                      <li><a href="#">Fiók</a></li>
+                      <li><a th:href="@{/elerhetoseg}">Elérhetőség</a></li>
+                      <li><a th:href="@{/fiok}">Fiók</a></li>
                   </ul>
               </nav>
           </div>
@@ -25,7 +25,7 @@
           <div class="hero-text">
               <h1>Minden, amire kedvencednek szüksége van!</h1>
               <p>Prémium minőségű eledel és felszerelés kutyáknak, macskáknak és kisállatoknak.</p>
-              <a>Vásárolj most</a>
+              <a th:href="@{/termek}" class="hero-btn">Vásárolj most</a>
           </div>
       </section>
     <section class="categories-section">

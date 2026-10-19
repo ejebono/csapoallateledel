@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="hu" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elérhetőség - Csapó Állateledel Webáruház</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+</head>
+<body>
+
+<div class="container">
+    <!-- FEJLÉC -->
+    <header class="navbar">
+        <div class="logo">
+            <img th:src="@{/images/logo.jpg}" alt="Csapó Állateledel Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a th:href="@{/}">Kezdőlap</a></li>
+                <li><a th:href="@{/termek}">Termékek</a></li>
+                <li><a th:href="@{/kapcsolat}" class="active">Elérhetőség</a></li>
+                <li><a th:href="@{/fiok}">Fiók</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ELÉRHERŐSÉG ÉS KAPCSOLAT FŐRÉSZ -->
+    <section class="contact-section">
+        <h1 class="page-title">Lépj kapcsolatba velünk!</h1>
+        <p class="contact-intro">Kérdésed van egy termékkel kapcsolatban, vagy tanácsra van szükséged? Keress minket bizalommal az alábbi elérhetőségek egyikén!</p>
+
+        <div class="contact-container">
+            <!-- Bal oldal: Kapcsolati adatok & Nyitvatartás -->
+            <div class="contact-info">
+                <h2>Üzletünk adatai</h2>
+
+                <div class="info-item">
+                    <span class="info-icon">📍</span>
+                    <div>
+                        <strong>Címünk:</strong>
+                        <p>4271 Debrecen, Csapó utca 12.</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <span class="info-icon">📞</span>
+                    <div>
+                        <strong>Telefonszám:</strong>
+                        <p>+36 30 123 4567</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <span class="info-icon">✉️</span>
+                    <div>
+                        <strong>E-mail cím:</strong>
+                        <p>info@csapoallateledel.hu</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <span class="info-icon">🕒</span>
+                    <div>
+                        <strong>Nyitvatartás:</strong>
+                        <p>Hétfő - Péntek: 08:00 - 18:00</p>
+                        <p>Szombat: 08:00 - 13:00</p>
+                        <p>Vasárnap: Zárva</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Jobb oldal: Üzenetküldő űrlap -->
+            <div class="contact-form-container">
+                <h2>Írj nekünk üzenetet!</h2>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Teljes név</label>
+                        <input type="text" id="name" placeholder="Kovács János" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-mail cím</label>
+                        <input type="email" id="email" placeholder="janos@example.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Tárgy</label>
+                        <input type="text" id="subject" placeholder="Miben segíthetünk?">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Üzenet</label>
+                        <textarea id="message" rows="5" placeholder="Írd le a kérdésedet..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Üzenet küldése</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- LÁBLÉC -->
+    <footer class="footer">
+        <p>&copy; 2026 Csapó Állateledel. Minden jog fenntartva.</p>
+    </footer>
+</div>
+
+</body>
+</html>
