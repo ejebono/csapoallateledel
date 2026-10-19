@@ -383,16 +383,14 @@ html {
     font-size: 14px;
     color: #555555;
 }
-
-/* 8. Regisztrációs link formázása */
 .account-switch a {
-    color: #507a2a; /* Zöld fő márkaszín */
-    font-weight: bold; /* Félkövér kiemelés */
-    text-decoration: none; /* Aláhúzás eltüntetése alapból */
+    color: #507a2a;
+    font-weight: bold;
+    text-decoration: none;
     transition: color 0.2s ease;
 }
 
 .account-switch a:hover {
-    color: #7fa64b; /* Világosabb zöld rámutatáskor */
-    text-decoration: underline; /* Aláhúzás megjelenítése rámutatáskor */
+    color: #7fa64b;
+    text-decoration: underline;
 }
